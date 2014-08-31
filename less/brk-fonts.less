@@ -1,0 +1,50 @@
+/*/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///
+/// @author:    José Antonio Yáñez Jiménez
+/// @created:   31/08/2014
+/// @modified:  31/08/2014
+/// @name:      Brk Fonts
+/// @version:   0.2.0
+/// @site:      www.jimenezfrontend.es
+///
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////*/
+
+
+@font-face {
+  font-family: 'brkfont';
+  src: url('../fonts/brkfont.eot');
+  src: url('../fonts/brkfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/brkfont.woff') format('woff'),
+       url('../fonts/brkfont.ttf') format('truetype'),
+       url('../fonts/brkfont.svg?#brkfonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Chrome hack: SVG is rendered more smooth in Windozze. 100% magic,
+// uncomment if you need it.
+//
+// Note, that will break hinting! In other OS-es font will be not as sharp
+// as it could be
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'brkfonts';
+    src: url('../font/brkfonts.svg?35488543#brkfonts') format('svg');
+  }
+}
+*/
+
+@import url('class-declare.less');
+
+@import url('extras.less');
+
+@import url('animate.less');
+
+@import url('codes.less');
+
+
+
