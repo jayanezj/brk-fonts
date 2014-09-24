@@ -7,10 +7,11 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
+  font-size: 150%;
   margin-right: .2em;
   text-align: center;
 
-  /* For safety - reset parent styles, that can break glyph codes*/
+  /* For safety - reset parent styles, that can break glyph codes */
   font-variant: normal;
   text-transform: none;
 
@@ -18,9 +19,8 @@
   line-height: 1em;
 
   /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
   margin-left: .2em;
 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
